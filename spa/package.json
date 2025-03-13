@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "seed": "npx drizzle-kit push && tsx ./seed-db.ts",
-    "test": "npx drizzle-kit generate && pnpm exec playwright install && vitest"
+    "test": "npx drizzle-kit generate && npm exec playwright install && vitest"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
@@ -31,6 +31,7 @@
     "@vue/tsconfig": "^0.7.0",
     "drizzle-kit": "^0.30.5",
     "happy-dom": "^17.4.4",
+    "playwright": "^1.51.0",
     "playwright-core": "^1.51.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",

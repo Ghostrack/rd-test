@@ -3,7 +3,7 @@
   "version": "0.0.0",
 	"scripts": {
 		"build": "tsc && npx drizzle-kit generate",
-		"dev": "npx drizzle-kit generate && npx drizzle-kit push && nodemon",
+		"dev": "npx drizzle-kit push && nodemon",
 		"start": "npm run build && fastify start dist/index.js",
 		"test": "npm run build && node --env-file .env.test --import tsx --test --watch",
 		"test-coverage": "npm run build && node --env-file .env.test --import tsx --test --experimental-test-coverage"

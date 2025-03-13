@@ -1,0 +1,7 @@
+.Link {
+
+  color: var(--link-colour);
+  font-weight: bold;
+  text-decoration: none;
+
+}

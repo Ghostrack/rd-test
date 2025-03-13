@@ -1,0 +1,37 @@
+.Table {
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  tr {
+    border-radius: var(--border-radius-sm);
+    display: flex;
+  }
+
+  th {
+    color: var(--text-light-colour);
+    flex: 1;
+    font-weight: normal;
+    padding: var(--spacing-md);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  td {
+    align-self: center;
+    flex: 1;
+    padding: var(--spacing-md);
+  }
+
+  .TableRow {
+
+    &:nth-child(even) {
+      background-color: var(--body-background-colour);
+      border-radius: var(--border-radius-sm);
+    }
+
+  }
+
+}

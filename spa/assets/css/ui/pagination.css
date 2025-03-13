@@ -1,0 +1,24 @@
+.Pagination {
+
+  display: flex;
+
+  button {
+    background-color: transparent;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    visibility: hidden;
+  }
+
+  button:hover {
+    box-shadow: var(--box-shadow-sm);
+  }
+
+  p {
+    margin: var(--spacing-sm) var(--spacing-lg);
+  }
+
+}

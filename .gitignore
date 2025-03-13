@@ -1,0 +1,15 @@
+node_modules
+pnpm-lock.yaml
+
+eslint.config.js
+eslint.base.config.js
+eslint.react.config.js
+eslint.typescript.config.js
+tsconfig.eslint.json
+
+.env
+.env.test
+
+.nuxt
+dist
+drizzle

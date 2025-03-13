@@ -1,0 +1,26 @@
+* {
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--body-background-colour);
+  height: 100vh;
+  margin: 0;
+}
+
+#__nuxt {
+  display: flex;
+  min-height: 100%;
+}
+
+.Layout {
+  background-color: var(--card-background-colour);
+  border-radius: var(--border-radius-lg);
+  flex: 1;
+  margin: var(--spacing-xl);
+  padding: var(--spacing-xl);
+}

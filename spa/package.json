@@ -1,0 +1,41 @@
+{
+  "name": "reedsy-spa",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "seed": "npx drizzle-kit push && tsx ./seed-db.ts",
+    "test": "npx drizzle-kit generate && pnpm exec playwright install && vitest"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "nuxt": "^3.16.0",
+    "pg": "^8.14.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.3.0",
+    "@nuxt/test-utils": "^3.17.2",
+    "@testcontainers/postgresql": "^10.19.0",
+    "@testing-library/vue": "^8.1.0",
+    "@types/node": "^22.13.10",
+    "@types/pg": "^8.11.11",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.7.0",
+    "drizzle-kit": "^0.30.5",
+    "happy-dom": "^17.4.4",
+    "playwright-core": "^1.51.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vitest": "^3.0.8",
+    "vue-tsc": "^2.2.8"
+  }
+}

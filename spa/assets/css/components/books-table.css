@@ -1,0 +1,75 @@
+.BooksTable {
+
+  .BooksTableTitleColumn {
+    flex-basis: 54%;
+  }
+
+  .BooksTableYearColumn {
+    flex-basis: 16%;
+  }
+
+  .BooksTableRatingColumn {
+    flex-basis: 16%;
+  }
+
+  .BooksTableLinksColumn {
+    flex-basis: 14%;
+  }
+
+  .BooksTableRow {
+    cursor: pointer;
+  }
+
+  .BookDetails {
+
+    display: flex;
+
+    .BookCoverImage {
+      border-radius: var(--border-radius-sm);
+      height: calc(100rem / 16);
+      margin-right: var(--spacing-lg);
+      width: calc(65rem / 16);
+    }
+
+    .BookMetadata {
+      align-self: center;
+    }
+
+    .BookTitle {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .BookAuthor {
+      color: var(--text-light-colour);
+      margin-top: var(--spacing-md);
+    }
+
+  }
+
+  .BookDescription {
+    font-weight: lighter;
+    max-height: 100vh;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 0 var(--spacing-lg);
+    white-space: pre-line;
+
+    &.v-enter-active,
+    &.v-leave-active {
+      transition: max-height var(--transition-duration-faster);
+    }
+
+    &.v-enter-from,
+    &.v-leave-to {
+      max-height: 0;
+    }
+  }
+
+  .BookLinks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+}
